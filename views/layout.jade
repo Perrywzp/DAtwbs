@@ -1,0 +1,28 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width')
+    title= title
+    block css
+      link(rel='stylesheet', href='/components/bootstrap/dist/css/bootstrap.css')
+      link(rel='stylesheet', href='/css/style.css')
+    block js
+      script(src='/components/jquery/dist/jquery.js')
+      script(src="/components/bootstrap/js/affix.js")
+      script(src="/components/bootstrap/js/alert.js")
+      script(src="/components/bootstrap/js/dropdown.js")
+      script(src="/components/bootstrap/js/tooltip.js")
+      script(src="/components/bootstrap/js/modal.js")
+      script(src="/components/bootstrap/js/transition.js")
+      script(src="/components/bootstrap/js/button.js")
+      script(src="/components/bootstrap/js/popover.js")
+      script(src="/components/bootstrap/js/carousel.js")
+      script(src="/components/bootstrap/js/scrollspy.js")
+      script(src="/components/bootstrap/js/collapse.js")
+      script(src="/components/bootstrap/js/tab.js")
+      //script(src='/components/bootstrap/dist/js/bootstrap.js')
+      if ENV_DEVELOPMENT
+        script(src='http://localhost:35729/livereload.js')
+  body
+    block content

@@ -1,0 +1,21 @@
+//
+   Created by wangzhipei on 2016/7/8/0008.
+
+extends layout
+
+block append js
+  script(src='/js/tooltip.js')
+
+block content
+  h1= title
+  div.container
+    a(href='#' data-toggle='tooltip' data-original-title='this is message') test1
+    span /
+    a(href='#' data-toggle='tooltip' data-original-title='this is message2') test2
+    hr
+    button.btn.btn-default(data-original-title='Tooltip on left' data-toggle='tooltip' data-placement='left') 左侧tooltip
+    button.btn.btn-primary(data-original-title='Tooltip on top' data-toggle='tooltip' data-placement='top') 上方tooltip
+    button.btn.btn-success(data-original-title='Tooltip on bottom' data-toggle='tooltip' data-placement='bottom') 下方tooltip
+    button.btn.btn-warning(data-original-title='Tooltip on right' data-toggle='tooltip' data-placement='right') 右侧tooltip
+
+

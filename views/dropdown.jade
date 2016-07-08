@@ -1,0 +1,54 @@
+//
+   Created by wangzhipei on 2016/7/7/0007.
+extends layout
+
+block content
+  h1= title
+  div.navbar.navbar-default#navbar-example
+    a.navbar-brand(href='#') Project Name
+    ul(role='navigation').nav.navbar-nav
+      li.dropdown
+        a#drop1.dropdown-toggle(role='button',href='#',data-toggle='dropdown') Dropdown 1
+          b.caret
+        ul.dropdown-menu(aria-labelledby='drop1',role='menu')
+          li(role='presentation'): a(href='#',tabindex='-1',role='menuitem') Action1
+          li(role='presentation'): a(href='#',tabindex='-1',role='menuitem') Action2
+          li(role='presentation'): a(href='#',tabindex='-1',role='menuitem') Action3
+      li.dropdown
+        a#drop2.dropdown-toggle(role='button',href='#',data-toggle='dropdown') Dropdown 2
+          b.caret
+        ul.dropdown-menu(aria-labelledby='drop1',role='menu')
+          li(role='presentation'): a(href='#',tabindex='-1',role='menuitem') Action1
+          li(role='presentation'): a(href='#',tabindex='-1',role='menuitem') Action2
+          li(role='presentation'): a(href='#',tabindex='-1',role='menuitem') Action3
+    ul.nav.navbar-nav.navbar-right
+      li.dropdown#fat-menu
+        a.dropdown-toggle#drop3(role='button',data-toggle='dropdown') Dropdown 3
+          b.caret
+        ul.dropdown-menu(role='menu',aria-labelledby='drop3')
+          li(role='presentation'): a(href='#' tabindex='-1' role='menuitem') Action1
+          li(role='presentation'): a(href='#' tabindex='-1' role='menuitem') Action2
+          li(role='presentation'): a(href='#' tabindex='-1' role='menuitem') Action3
+  ul.nav.nav-pills
+    li.active: a(href='#') Regular link
+    li.dropdown
+      a.dropdown-toggle#drop4(role='button',data-toggle='dropdown') Dropdown 1
+        b.caret
+      ul.dropdown-menu(role='menu',aria-labelledby='drop3')
+        li(role='presentation'): a(href='#' tabindex='-1' role='menuitem') Action1
+        li(role='presentation'): a(href='#' tabindex='-1' role='menuitem') Action2
+        li(role='presentation'): a(href='#' tabindex='-1' role='menuitem') Action3
+    li.dropdown
+      a.dropdown-toggle#drop5(role='button',data-toggle='dropdown') Dropdown 2
+        b.caret
+      ul.dropdown-menu(role='menu',aria-labelledby='drop3')
+        li(role='presentation'): a(href='#' tabindex='-1' role='menuitem') Action1
+        li(role='presentation'): a(href='#' tabindex='-1' role='menuitem') Action2
+        li(role='presentation'): a(href='#' tabindex='-1' role='menuitem') Action3
+    li.dropdown
+      a.dropdown-toggle#drop6(role='button',data-toggle='dropdown') Dropdown 3
+        b.caret
+      ul.dropdown-menu(role='menu',aria-labelledby='drop3')
+        li(role='presentation'): a(href='#' tabindex='-1' role='menuitem') Action1
+        li(role='presentation'): a(href='#' tabindex='-1' role='menuitem') Action2
+        li(role='presentation'): a(href='#' tabindex='-1' role='menuitem') Action3

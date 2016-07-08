@@ -1,0 +1,66 @@
+//
+   Created by wangzhipei on 2016/7/7/0007.
+
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  div#selector
+    nav.nav.navbar-default.navbar-fixed-top(role='navigation')
+      ul.nav.navbar-nav
+        li.active: a(href='#fat') @fat
+        li: a(href='#mdo') @mdo
+        li.dropdown
+          a.dropdown-toggle(data-toggle='dropdown',href='#') Dropdown
+            b.caret
+          ul.dropdown-menu
+            li: a(href='#one') one
+            li: a(href='#two') two
+            li: a(href='#three') three
+  div(data-offset='150',data-target='#selector',data-spy='scroll',style='overflow:auto;height:300px;')
+    h4#fat @fat
+      p
+      p 满江红·日暖烟轻
+      p 日暖烟轻，竹梢映、花阴凌乱。
+      p 微风皱、池光青碧，绿杨垂岸。艳杏墙头红粉，幽兰砌下飘香暖。
+      p 称邀宾、明日去寻芳，频欢宴。
+      p 光景速，浑如箭。醉梦里，春强半。
+      p 且花前莫厌，玉杯频劝。一枕游仙方警悟，浮名自笑犹萦绊。
+      p 醉挥毫、付与雪儿歌，娇莺啭。
+    h4#mdo @mdo
+      p
+      p 满江红·日暖烟轻
+      p 日暖烟轻，竹梢映、花阴凌乱。
+      p 微风皱、池光青碧，绿杨垂岸。艳杏墙头红粉，幽兰砌下飘香暖。
+      p 称邀宾、明日去寻芳，频欢宴。
+      p 光景速，浑如箭。醉梦里，春强半。
+      p 且花前莫厌，玉杯频劝。一枕游仙方警悟，浮名自笑犹萦绊。
+      p 醉挥毫、付与雪儿歌，娇莺啭。
+    h4#one @one
+      p
+      p 满江红·日暖烟轻
+      p 日暖烟轻，竹梢映、花阴凌乱。
+      p 微风皱、池光青碧，绿杨垂岸。艳杏墙头红粉，幽兰砌下飘香暖。
+      p 称邀宾、明日去寻芳，频欢宴。
+      p 光景速，浑如箭。醉梦里，春强半。
+      p 且花前莫厌，玉杯频劝。一枕游仙方警悟，浮名自笑犹萦绊。
+      p 醉挥毫、付与雪儿歌，娇莺啭。
+    h4#two @two
+      p
+      p 满江红·日暖烟轻
+      p 日暖烟轻，竹梢映、花阴凌乱。
+      p 微风皱、池光青碧，绿杨垂岸。艳杏墙头红粉，幽兰砌下飘香暖。
+      p 称邀宾、明日去寻芳，频欢宴。
+      p 光景速，浑如箭。醉梦里，春强半。
+      p 且花前莫厌，玉杯频劝。一枕游仙方警悟，浮名自笑犹萦绊。
+      p 醉挥毫、付与雪儿歌，娇莺啭。
+    h4#three @three
+      p
+      p 满江红·日暖烟轻
+      p 日暖烟轻，竹梢映、花阴凌乱。
+      p 微风皱、池光青碧，绿杨垂岸。艳杏墙头红粉，幽兰砌下飘香暖。
+      p 称邀宾、明日去寻芳，频欢宴。
+      p 光景速，浑如箭。醉梦里，春强半。
+      p 且花前莫厌，玉杯频劝。一枕游仙方警悟，浮名自笑犹萦绊。
+      p 醉挥毫、付与雪儿歌，娇莺啭。

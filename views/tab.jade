@@ -1,0 +1,62 @@
+//
+   Created by wangzhipei on 2016/7/7/0007.
+
+extends layout
+
+block content
+  h1= title
+  ul.nav.nav-tabs
+    li.active: a(href='#home' data-toggle='tab') Home
+    li: a(href='#profile' data-toggle='tab') Profile
+    li: a(href='#messages' data-toggle='tab') Message
+    li: a(href='#settings' data-toggle='tab') Settings
+
+  div.tab-content
+    div.tab-pane.active.fade.in#home |homehomehomehomehomehomehomehomehome
+                             |homehomehomehomehomehomehomehomehome
+                             |homehomehomehomehomehomehomehomehome
+                             |homehomehomehomehomehomehomehomehome
+                             |homehomehomehomehomehomehomehomehome
+    div.tab-pane.fade#profile |profileprofileprofileprofileprofileprofile
+                         |profileprofileprofileprofileprofileprofile
+                         |profileprofileprofileprofileprofileprofile
+                         |profileprofileprofileprofileprofileprofile
+                         |profileprofileprofileprofileprofileprofile
+    div.tab-pane.fade#messages |messagesmessagesmessagesmessagesmessagesmessages
+                          |messagesmessagesmessagesmessagesmessagesmessages
+                          |messagesmessagesmessagesmessagesmessagesmessages
+                          |messagesmessagesmessagesmessagesmessagesmessages
+                          |messagesmessagesmessagesmessagesmessagesmessages
+    div.tab-pane.fade#settings |settingssettingssettingssettingssettingssettings
+                          |settingssettingssettingssettingssettingssettings
+                          |settingssettingssettingssettingssettingssettings
+                          |settingssettingssettingssettingssettingssettings
+                          |settingssettingssettingssettingssettingssettings
+  br
+  br
+  ul.nav.nav-pills
+    li.active: a(href='#home1' data-toggle='pill') Home
+    li: a(href='#profile2' data-toggle='pill') Profile
+    li: a(href='#messages3' data-toggle='pill') Message
+    li: a(href='#settings4' data-toggle='pill') Settings
+  div.tab-content
+    div.tab-pane.active.fade.in#home1 |homehomehomehomehomehomehomehomehome
+      |homehomehomehomehomehomehomehomehome
+      |homehomehomehomehomehomehomehomehome
+      |homehomehomehomehomehomehomehomehome
+      |homehomehomehomehomehomehomehomehome
+    div.tab-pane.fade#profile2 |profileprofileprofileprofileprofileprofile
+      |profileprofileprofileprofileprofileprofile
+      |profileprofileprofileprofileprofileprofile
+      |profileprofileprofileprofileprofileprofile
+      |profileprofileprofileprofileprofileprofile
+    div.tab-pane.fade#messages3 |messagesmessagesmessagesmessagesmessagesmessages
+      |messagesmessagesmessagesmessagesmessagesmessages
+      |messagesmessagesmessagesmessagesmessagesmessages
+      |messagesmessagesmessagesmessagesmessagesmessages
+      |messagesmessagesmessagesmessagesmessagesmessages
+    div.tab-pane.fade#settings4 |settingssettingssettingssettingssettingssettings
+      |settingssettingssettingssettingssettingssettings
+      |settingssettingssettingssettingssettingssettings
+      |settingssettingssettingssettingssettingssettings
+      |settingssettingssettingssettingssettingssettings
